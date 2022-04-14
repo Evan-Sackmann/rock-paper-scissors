@@ -67,6 +67,36 @@ h2 {
 	padding: 0;
 }
 
+.main-content {
+	/* display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; */
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 2em;
+}
+
+.end-message {
+	text-align: center;
+}
+
+.end-message > h1 {
+	font-size: 4rem;
+	margin: 0;
+}
+
+.end-message > button {
+	padding: 1em 4em;
+	font-size: 1rem;
+	border-radius: 10px;
+	border: none;
+	letter-spacing: 2px;
+	font-family: "Barlow Semi Condensed", sans-serif;
+	color: hsl(229, 25%, 31%);
+	margin-top: 1em;
+}
+
 .rules {
 	background-color: white;
 	top: 0%;

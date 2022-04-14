@@ -15,7 +15,13 @@ function Hands(props) {
 				/>
 			)}
 			{gameStart && (
-				<HandRPS choice={playerChoice} gameOver={props.gameOver} />
+				<HandRPS
+					choice={playerChoice}
+					gameOver={props.gameOver}
+					restartGame={props.restartGame}
+					restart={() => setGameStart(false)}
+					gameEnd={props.gameEnd}
+				/>
 			)}
 		</div>
 	)
