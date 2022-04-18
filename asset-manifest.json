@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "//evan-sackmann.github.io/rock-paper-scissors/static/css/main.f9495728.css",
+    "main.js": "//evan-sackmann.github.io/rock-paper-scissors/static/js/main.2b308f79.js",
+    "static/js/787.c8ffd4a8.chunk.js": "//evan-sackmann.github.io/rock-paper-scissors/static/js/787.c8ffd4a8.chunk.js",
+    "index.html": "//evan-sackmann.github.io/rock-paper-scissors/index.html",
+    "static/media/bg-triangle.svg": "//evan-sackmann.github.io/rock-paper-scissors/static/media/bg-triangle.c0c30b562fdb08766659.svg",
+    "main.f9495728.css.map": "//evan-sackmann.github.io/rock-paper-scissors/static/css/main.f9495728.css.map",
+    "main.2b308f79.js.map": "//evan-sackmann.github.io/rock-paper-scissors/static/js/main.2b308f79.js.map",
+    "787.c8ffd4a8.chunk.js.map": "//evan-sackmann.github.io/rock-paper-scissors/static/js/787.c8ffd4a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9495728.css",
+    "static/js/main.2b308f79.js"
+  ]
+}
