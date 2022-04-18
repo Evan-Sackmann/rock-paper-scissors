@@ -1,4 +1,4 @@
-function Header() {
+function Header(props) {
 	return (
 		<div className="header">
 			<img
@@ -10,7 +10,7 @@ function Header() {
 				<p>
 					<small>SCORE</small>
 				</p>
-				<h2>13</h2>
+				<h2>{props.score}</h2>
 			</div>
 		</div>
 	)

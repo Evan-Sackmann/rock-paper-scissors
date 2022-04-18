@@ -3,6 +3,7 @@ function EndMessage(props) {
 		props.restart()
 		props.restartGame()
 	}
+	
 	function decideWinner() {
 		if (
 			(props.playerChoice === "rock" && props.houseChoice === "paper") ||

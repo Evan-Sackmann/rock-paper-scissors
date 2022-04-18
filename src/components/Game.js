@@ -9,6 +9,7 @@ function Game() {
 				gameOver={() => setGameEnd(true)}
 				gameEnd={gameEnd}
 				restartGame={() => setGameEnd(false)}
+				
 			/>
 		</div>
 	)
