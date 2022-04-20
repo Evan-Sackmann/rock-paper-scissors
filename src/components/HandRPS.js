@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react"
 import EndMessage from "./EndMessage"
+import rock from "../images/icon-rock.svg"
+import paper from "../images/icon-paper.svg"
+import scissors from "../images/icon-scissors.svg"
 
 
 function HandRPS(props) {
@@ -20,6 +23,19 @@ function HandRPS(props) {
 				throw new Error("Something went wrong")
 		}
 	}
+	function displayPlayerChoice(props) {
+		switch(props.choice) {
+			case "rock": 
+				return rock
+			case "paper":
+				return paper
+			case "scissors":
+				return scissors
+			default:
+				throw new Error("Something went wrong")
+		}
+	}
+
 	useEffect(() => {
 		setTimeout(decideHouseChoice, 1000)
 
@@ -33,7 +49,7 @@ function HandRPS(props) {
 				<div className="RPS-choices">
 					<div className={`icon-${props.choice}-rps`}>
 						<img
-							src={`../images/icon-${props.choice}.svg`}
+							src={displayPlayerChoice}
 							alt=""
 						/>
 					</div>
