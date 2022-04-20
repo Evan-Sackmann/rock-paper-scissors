@@ -109,7 +109,7 @@ h2 {
 /* Hands Styling */
 
 .icon-container {
-	background-image: url("/public/images/bg-triangle.svg");
+	background-image: url("./images/bg-triangle.svg");
 	background-size: 50%;
 	background-position: center;
 	background-repeat: no-repeat;

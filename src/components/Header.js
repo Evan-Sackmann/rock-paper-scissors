@@ -1,9 +1,11 @@
+import logo from "../images/logo.svg"
+
 function Header(props) {
 	return (
 		<div className="header">
 			<img
 				className="header-logo"
-				src="/images/logo.svg"
+				src={logo}
 				alt="Rock Paper Scissors"
 			/>
 			<div className="header-score-card">

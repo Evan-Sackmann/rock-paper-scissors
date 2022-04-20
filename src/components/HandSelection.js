@@ -1,3 +1,7 @@
+import rock from "../images/icon-rock.svg"
+import paper from "../images/icon-paper.svg"
+import scissors from "../images/icon-scissors.svg"
+
 function HandSelection(props) {
 	function selectHand(choice) {
 		props.start()
@@ -6,18 +10,18 @@ function HandSelection(props) {
 	return (
 		<div className="icon-container">
 			<div onClick={() => selectHand("paper")} className="icon-paper">
-				<img src="/images/icon-paper.svg" alt="paper" />
+				<img src={paper} alt="paper" />
 			</div>
 
 			<div
 				onClick={() => selectHand("scissors")}
 				className="icon-scissors"
 			>
-				<img src="/images/icon-scissors.svg" alt="scissors" />
+				<img src={scissors} alt="scissors" />
 			</div>
 
 			<div onClick={() => selectHand("rock")} className="icon-rock">
-				<img src="/images/icon-rock.svg" alt="rock" />
+				<img src={rock} alt="rock" />
 			</div>
 		</div>
 	)

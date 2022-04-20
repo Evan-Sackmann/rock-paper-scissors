@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import EndMessage from "./EndMessage"
 
+
 function HandRPS(props) {
 	const [houseChoice, setHouseChoice] = useState("")
 	const [houseMessage, setHouseMessage] = useState("PICKING")
@@ -32,8 +33,8 @@ function HandRPS(props) {
 				<div className="RPS-choices">
 					<div className={`icon-${props.choice}-rps`}>
 						<img
-							src={`/images/icon-${props.choice}.svg`}
-							alt={props.choice}
+							src={`../images/icon-${props.choice}.svg`}
+							alt=""
 						/>
 					</div>
 					<h3>YOU PICKED</h3>
@@ -41,8 +42,8 @@ function HandRPS(props) {
 				<div className="RPS-choices">
 					<div className={`icon-${houseChoice}-rps`}>
 						<img
-							src={`/images/icon-${houseChoice}.svg`}
-							alt={houseChoice}
+							src={`../images/icon-${houseChoice}.svg`}
+							alt=""
 						/>
 					</div>
 					<h3>{houseMessage}</h3>
