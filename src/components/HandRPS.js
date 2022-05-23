@@ -23,11 +23,15 @@ function HandRPS(props) {
   function displayPlayerChoice(props) {
     switch (props.choice) {
       case "rock":
-        return <img src="./images/icon-rock.svg" alt="Rock" />;
+        return (
+          <div className={`icon-${props.choice}-rps`}>
+            <img src="../images/icon-rock.svg" alt="Rock" />;
+          </div>
+        );
       case "paper":
-        return <img src="./images/icon-paper.svg" alt="Paper" />;
+        return <img src="../images/icon-paper.svg" alt="Paper" />;
       case "scissors":
-        return <img src="./images/icon-scissors.svg" alt="Scissors" />;
+        return <img src="../images/icon-scissors.svg" alt="Scissors" />;
       default:
         throw new Error("Something went wrong");
     }
@@ -44,9 +48,7 @@ function HandRPS(props) {
     <div className="main-content">
       <div className="RPS-container">
         <div className="RPS-choices">
-          <div className={`icon-${props.choice}-rps`}>
-            {displayPlayerChoice(props)}
-          </div>
+          {displayPlayerChoice(props)}
           <h3>YOU PICKED</h3>
         </div>
         <div className="RPS-choices">
