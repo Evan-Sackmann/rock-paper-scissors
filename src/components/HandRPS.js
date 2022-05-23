@@ -20,7 +20,6 @@ function HandRPS(props) {
     }
   }
   console.log(props.choice);
-  console.log(houseChoice);
   function displayPlayerChoice(props) {
     switch (props.choice) {
       case "rock":
@@ -46,7 +45,7 @@ function HandRPS(props) {
       <div className="RPS-container">
         <div className="RPS-choices">
           <div className={`icon-${props.choice}-rps`}>
-            {displayPlayerChoice}
+            {displayPlayerChoice(props)}
           </div>
           <h3>YOU PICKED</h3>
         </div>
