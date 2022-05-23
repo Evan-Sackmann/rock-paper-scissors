@@ -23,11 +23,7 @@ function HandRPS(props) {
   function displayPlayerChoice(props) {
     switch (props.choice) {
       case "rock":
-        return (
-          <div className={`icon-${props.choice}-rps`}>
-            <img src="../images/icon-rock.svg" alt="Rock" />;
-          </div>
-        );
+        return <img src="../images/icon-rock.svg" alt="Rock" />;
       case "paper":
         return <img src="../images/icon-paper.svg" alt="Paper" />;
       case "scissors":
@@ -48,7 +44,9 @@ function HandRPS(props) {
     <div className="main-content">
       <div className="RPS-container">
         <div className="RPS-choices">
-          {displayPlayerChoice(props)}
+          <div className={`icon-${props.choice}-rps`}>
+            {displayPlayerChoice(props)}
+          </div>
           <h3>YOU PICKED</h3>
         </div>
         <div className="RPS-choices">
