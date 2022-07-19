@@ -4,9 +4,8 @@ function Footer() {
 	return (
 		<footer>
 			<p>RULES</p>
-			{/* <RulesModal /> */}
 		</footer>
-	)
+	);
 }
 
-export default Footer
+export default Footer;
